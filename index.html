@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cosmo's Heating & Air | Reliable AC & Heating in Las Vegas</title>
+<meta name="description" content="AC repair, installation, rooftop units, maintenance and emergency service with clear written estimates.">
+<link rel="icon" href="img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=Fraunces:opsz,wght@9..144,400;9..144,500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4f1ea;--ink:#13202e;--mut:#5d6872;--card:#fff;--navy:#14263a;--teal:#1d9a94;--sun:#f4c13d;--line:rgba(19,32,46,.12);--r:22px;--ease:cubic-bezier(.22,1,.36,1);--head:'Fraunces',Georgia,serif;--body:'Inter Tight',system-ui,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font:400 17px/1.55 var(--body);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;width:100%;height:100%;object-fit:cover}a{color:inherit;text-decoration:none}
+.wrap{max-width:1240px;margin:0 auto;padding:0 28px}
+h1,h2,h3{font-family:var(--head);font-weight:400;letter-spacing:-.02em;line-height:1.05}
+h1{font-size:clamp(42px,6.4vw,92px)}h2{font-size:clamp(34px,4.6vw,62px)}h3{font-size:clamp(26px,3vw,38px)}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:13px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--teal)}
+.eyebrow:before{content:"";width:8px;height:8px;border-radius:50%;background:var(--sun)}
+.sec{padding:110px 0}
+/* buttons */
+.btn{position:relative;display:inline-flex;align-items:center;gap:10px;padding:15px 26px;border-radius:999px;font-weight:500;font-size:16px;overflow:hidden;isolation:isolate;transition:transform .4s var(--ease),color .3s;border:1px solid var(--ink);cursor:pointer;background:none;font-family:inherit;color:var(--ink)}
+.btn:before{content:"";position:absolute;inset:0;background:var(--ink);transform:translateY(101%);transition:transform .45s var(--ease);z-index:-1;border-radius:inherit}
+.btn:hover:before{transform:none}.btn:hover{color:#fff;transform:translateY(-2px)}
+.btn.pri{background:var(--ink);color:#fff}.btn.pri:before{background:var(--teal)}.btn.pri:hover{border-color:var(--teal)}
+.btn .ar{transition:transform .4s var(--ease)}.btn:hover .ar{transform:translateX(5px)}
+.btn.lt{color:#fff;border-color:rgba(255,255,255,.6)}.btn.lt:before{background:#fff}.btn.lt:hover{color:var(--ink)}
+/* nav */
+nav{position:fixed;top:0;left:0;right:0;z-index:50;transition:transform .5s var(--ease),background .3s,box-shadow .3s}
+nav.hide{transform:translateY(-110%)}nav.solid{background:rgba(244,241,234,.88);backdrop-filter:blur(14px);box-shadow:0 1px 0 var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:76px}
+.logo{display:flex;align-items:center;gap:10px;font-family:var(--head);font-size:24px;letter-spacing:-.02em}
+.logo img{width:auto;height:54px;object-fit:contain}footer .logo img{height:72px}
+.logo i{width:30px;height:30px;border-radius:50%;background:conic-gradient(var(--teal),var(--sun),var(--teal));display:grid;place-items:center}
+.logo i:after{content:"";width:12px;height:12px;border-radius:50%;background:var(--bg)}
+.links{display:flex;gap:34px;font-size:15px}.links a{position:relative;padding:4px 0}
+.links a:after{content:"";position:absolute;left:0;bottom:0;height:1px;width:100%;background:currentColor;transform:scaleX(0);transform-origin:right;transition:transform .45s var(--ease)}
+.links a:hover:after{transform:scaleX(1);transform-origin:left}
+.burger{display:none;background:none;border:0;width:40px;height:40px;cursor:pointer}.burger span{display:block;width:24px;height:2px;background:var(--ink);margin:6px auto;transition:.35s var(--ease)}
+.burger.on span:first-child{transform:translateY(4px) rotate(45deg)}.burger.on span:last-child{transform:translateY(-4px) rotate(-45deg)}
+/* reveal animations */
+.rv{opacity:0;transform:translateY(40px);filter:blur(6px);transition:opacity 1s var(--ease),transform 1s var(--ease),filter 1s var(--ease);transition-delay:var(--d,0s)}
+.rv.in{opacity:1;transform:none;filter:none}
+.mask{display:block;overflow:hidden;padding-bottom:.08em}.mask>span{display:block;transform:translateY(110%);transition:transform 1.1s var(--ease);transition-delay:var(--d,0s)}
+.in .mask>span,.mask.in>span{transform:none}
+.imgbox{overflow:hidden;border-radius:var(--r);position:relative;background:#d9d4c8}
+.imgbox.rev{clip-path:inset(0 0 100% 0);transition:clip-path 1.3s var(--ease)}.imgbox.rev.in{clip-path:inset(0)}
+.imgbox img{transform:scale(1.18);transition:transform 1.8s var(--ease)}.imgbox.in img{transform:scale(1)}
+.imgbox.zoom:hover img{transform:scale(1.06)}
+/* hero */
+.hero{padding:150px 0 70px}
+.hero .grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:end}
+.hero h1{margin:22px 0 26px}.hero p.lead{max-width:520px;color:var(--mut);font-size:19px}
+.hero .cta{display:flex;gap:14px;flex-wrap:wrap;margin:34px 0 36px}
+.tags{display:flex;gap:10px;flex-wrap:wrap}.tags span{padding:9px 16px;border:1px solid var(--line);border-radius:999px;font-size:14px;background:rgba(255,255,255,.55)}
+.heroimg{height:640px;position:relative}.heroimg .imgbox{height:100%}
+.badge{position:absolute;left:-26px;bottom:34px;background:var(--navy);color:#fff;padding:16px 22px;border-radius:16px;font-size:14px;max-width:230px;animation:float 5s ease-in-out infinite;z-index:2}
+@keyframes float{50%{transform:translateY(-10px)}}
+/* marquee strip */
+.strip{padding:30px 0 10px;overflow:hidden}
+.track{display:flex;gap:18px;width:max-content;animation:slide 48s linear infinite}.strip:hover .track{animation-play-state:paused}
+.track .imgbox{width:300px;height:380px;flex:none}.track .imgbox img{transform:none}
+@keyframes slide{to{transform:translateX(calc(-50% - 9px))}}
+/* intro list */
+.intro{display:grid;grid-template-columns:1fr 1.2fr;gap:60px;align-items:start}
+.intro .big{font-family:var(--head);font-size:clamp(26px,3vw,40px);line-height:1.2;letter-spacing:-.015em}
+.checks{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.check{padding:24px;background:var(--card);border-radius:var(--r);transition:transform .5s var(--ease),box-shadow .5s}.check:hover{transform:translateY(-6px);box-shadow:0 24px 50px -24px rgba(19,32,46,.3)}
+.check b{display:grid;place-items:center;width:36px;height:36px;border-radius:50%;background:var(--sun);margin-bottom:14px;font-weight:600}
+/* why */
+.why{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.why .imgbox{height:620px}.why p{color:var(--mut);margin:24px 0 32px;max-width:480px}
+.est{position:absolute;right:20px;bottom:20px;left:20px;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-radius:18px;padding:22px;font-size:14px;z-index:2}
+.est header{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-weight:500;font-size:15px}
+.est header em{font-style:normal;background:#dff3f1;color:#0f6f6a;padding:4px 12px;border-radius:999px;font-size:12px}
+.est li{list-style:none;display:flex;gap:10px;padding:5px 0;color:var(--mut)}.est li:before{content:"✓";color:var(--teal);font-weight:600}
+/* stats */
+.stats{background:var(--navy);color:#fff;border-radius:34px;padding:70px 50px;display:grid;grid-template-columns:repeat(4,1fr);gap:30px;margin:0 28px}
+.stat{border-left:1px solid rgba(255,255,255,.18);padding-left:26px}.stat:first-child{border:0;padding:0}
+.stat b{display:block;font-family:var(--head);font-weight:400;font-size:clamp(52px,6vw,84px);line-height:1;color:var(--sun)}
+.stat span{display:block;margin-top:10px;color:rgba(255,255,255,.72);font-size:15px}
+/* services */
+.head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:56px;flex-wrap:wrap}.head h2{max-width:760px;margin-top:16px}
+.svc{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{position:relative;background:var(--card);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;transition:transform .6s var(--ease),box-shadow .6s}
+.card:hover{transform:translateY(-8px);box-shadow:0 30px 60px -28px rgba(19,32,46,.35)}
+.card .imgbox{height:230px;border-radius:0}.card:hover .imgbox img{transform:scale(1.08)}
+.card .tx{padding:26px;display:flex;flex-direction:column;gap:10px;flex:1}
+.num{font-size:13px;color:var(--teal);font-weight:600;letter-spacing:.08em}
+.card p{color:var(--mut);font-size:15px}.more{margin-top:auto;padding-top:14px;display:inline-flex;gap:8px;font-weight:500;font-size:15px}.more span{transition:transform .4s var(--ease)}.card:hover .more span{transform:translateX(6px)}
+/* safety */
+.safe{display:grid;grid-template-columns:1.1fr .9fr;gap:70px;align-items:center}.safe .imgbox{height:560px}
+.bul{margin:28px 0 34px;display:grid;gap:14px}.bul div{display:flex;gap:14px;padding-bottom:14px;border-bottom:1px solid var(--line)}.bul div:before{content:"";flex:none;margin-top:9px;width:9px;height:9px;border-radius:50%;background:var(--teal)}
+/* process */
+.proc{background:var(--navy);color:#fff;border-radius:34px;margin:0 28px;padding:100px 0}.proc .eyebrow{color:var(--sun)}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:20px;position:relative}
+.steps:before{content:"";position:absolute;top:27px;left:0;right:0;height:1px;background:rgba(255,255,255,.2)}
+.steps:after{content:"";position:absolute;top:27px;left:0;height:1px;width:0;background:var(--sun);transition:width 2.2s var(--ease)}.steps.in:after{width:100%}
+.step{padding-right:30px;position:relative}.step i{display:grid;place-items:center;width:54px;height:54px;border-radius:50%;background:var(--navy);border:1px solid rgba(255,255,255,.3);font-style:normal;font-family:var(--head);font-size:22px;margin-bottom:28px;position:relative;z-index:2;transition:.5s var(--ease)}
+.step:hover i{background:var(--sun);color:var(--navy);transform:scale(1.1)}.step h3{font-size:24px;margin-bottom:10px;font-family:var(--body);font-weight:500;letter-spacing:-.01em}.step p{color:rgba(255,255,255,.7);font-size:15px}
+/* projects */
+.proj{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.proj .imgbox{height:430px}.proj a:hover .imgbox img{transform:scale(1.07)}
+.proj .meta{display:flex;justify-content:space-between;margin:18px 0 6px;font-size:13px;color:var(--teal);font-weight:600;letter-spacing:.06em;text-transform:uppercase}.proj h3{font-size:26px;font-family:var(--head)}
+/* reviews */
+.revs{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.r{background:var(--card);border-radius:var(--r);padding:34px;display:flex;flex-direction:column;gap:20px;transition:transform .5s var(--ease)}.r:hover{transform:translateY(-6px)}
+.stars{color:var(--sun);letter-spacing:3px;font-size:18px}.r p{font-family:var(--head);font-size:22px;line-height:1.3}.who{margin-top:auto;display:flex;gap:12px;align-items:center;font-size:14px}.who i{width:42px;height:42px;border-radius:50%;background:var(--teal);color:#fff;display:grid;place-items:center;font-style:normal;font-weight:600}.who small{display:block;color:var(--mut)}
+.note{margin-top:22px;font-size:13px;color:var(--mut)}
+/* team + area */
+.team{display:grid;grid-template-columns:1.2fr .8fr;gap:22px}.team .imgbox{height:520px}.team .box{background:var(--navy);color:#fff;border-radius:var(--r);padding:46px;display:flex;flex-direction:column;justify-content:space-between}
+.area{display:flex;flex-wrap:wrap;gap:10px;margin:24px 0 30px}.area span{padding:9px 16px;border:1px solid rgba(255,255,255,.3);border-radius:999px;font-size:14px;transition:.3s}.area span:hover{background:var(--sun);color:var(--navy);border-color:var(--sun)}
+/* faq */
+.faq{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px}.q{border-bottom:1px solid var(--line)}
+.q button{width:100%;display:flex;justify-content:space-between;align-items:center;gap:20px;background:none;border:0;padding:26px 0;font:500 20px var(--body);text-align:left;cursor:pointer;color:var(--ink)}
+.q button i{flex:none;width:34px;height:34px;border-radius:50%;border:1px solid var(--line);position:relative;transition:.5s var(--ease)}
+.q button i:before,.q button i:after{content:"";position:absolute;left:50%;top:50%;width:12px;height:1.5px;background:currentColor;transform:translate(-50%,-50%);transition:.5s var(--ease)}.q button i:after{transform:translate(-50%,-50%) rotate(90deg)}
+.q.open button i{background:var(--ink);color:#fff;transform:rotate(180deg)}.q.open button i:after{transform:translate(-50%,-50%) rotate(0)}
+.q .a{display:grid;grid-template-rows:0fr;transition:grid-template-rows .6s var(--ease)}.q.open .a{grid-template-rows:1fr}.q .a div{overflow:hidden;color:var(--mut)}.q .a p{padding:0 50px 26px 0}
+/* cta */
+.cta2{position:relative;border-radius:34px;overflow:hidden;margin:0 28px;min-height:560px;display:grid;place-items:center;text-align:center;color:#fff}
+.cta2 .bgimg{position:absolute;inset:-8%;z-index:0}.cta2 .bgimg img{filter:brightness(.42)}
+.cta2 .in2{position:relative;z-index:2;padding:80px 28px;max-width:820px}.cta2 h2{margin-bottom:34px}.cta2 .row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+/* footer */
+footer{padding:100px 0 34px}.fg{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px}
+footer h4{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--mut);margin-bottom:18px;font-weight:500}footer li{list-style:none;margin-bottom:10px}footer li a{transition:color .3s,padding .4s var(--ease)}footer li a:hover{color:var(--teal);padding-left:6px}
+footer .about p{color:var(--mut);margin:16px 0;max-width:340px;font-size:15px}.bar{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-top:70px;padding-top:26px;border-top:1px solid var(--line);font-size:14px;color:var(--mut)}
+.bigword{font-family:var(--head);font-size:clamp(70px,17vw,260px);line-height:.85;letter-spacing:-.04em;color:rgba(19,32,46,.07);text-align:center;margin-top:50px;white-space:nowrap;overflow:hidden}
+/* responsive */
+@media(max-width:960px){.sec{padding:80px 0}.links,.nav>.btn{display:none}.burger{display:block}
+ .links.open{display:flex;position:fixed;inset:76px 0 auto 0;background:var(--bg);flex-direction:column;padding:20px 28px 30px;gap:18px;font-size:20px;box-shadow:0 20px 40px rgba(0,0,0,.1)}
+ .hero .grid,.intro,.why,.safe,.faq,.team{grid-template-columns:1fr;gap:40px}.heroimg{height:460px;margin-top:30px}.badge{left:14px}
+ .svc,.proj,.revs{grid-template-columns:1fr 1fr}.stats{grid-template-columns:1fr 1fr;padding:44px 28px;margin:0 14px}.stat:nth-child(3){border:0;padding-left:0}
+ .proc,.cta2{margin:0 14px}.steps{grid-template-columns:1fr 1fr;gap:40px 0}.steps:before,.steps:after{display:none}.fg{grid-template-columns:1fr 1fr}.why .imgbox,.safe .imgbox{height:440px}}
+@media(max-width:620px){body{font-size:16px}.wrap{padding:0 20px}.svc,.proj,.revs,.checks,.steps{grid-template-columns:1fr}.track .imgbox{width:230px;height:300px}.fg{grid-template-columns:1fr}.hero{padding-top:110px}.q button{font-size:18px}.stats{grid-template-columns:1fr}.stat{border:0!important;padding:0!important}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv,.mask>span,.imgbox.rev{opacity:1;transform:none;filter:none;clip-path:none}.imgbox img{transform:none}}
+</style>
+</head>
+<body>
+
+<nav id="nav"><div class="wrap nav">
+  <a href="#top" class="logo" aria-label="Cosmo's Heating & Air Conditioning"><img src="img/logo.png" alt="Cosmo's Heating & Air Conditioning"></a>
+  <div class="links" id="links"><a href="/air-conditioning.html">Air Conditioning</a><a href="#work">Our Work</a><a href="#process">Process</a><a href="#about">About</a><a href="#reviews">Reviews</a><a href="#faq">FAQ</a></div>
+  <a href="#contact" class="btn pri">Get a Free Estimate <span class="ar">→</span></a>
+  <button class="burger" id="burger" aria-label="Menu"><span></span><span></span></button>
+</div></nav>
+
+<header class="hero" id="top"><div class="wrap grid">
+  <div>
+    <span class="eyebrow rv">Heating &amp; air that puts comfort first</span>
+    <h1><span class="mask"><span style="--d:.1s">A cooler home</span></span><span class="mask"><span style="--d:.2s">starts with the</span></span><span class="mask"><span style="--d:.3s">right HVAC team.</span></span></h1>
+    <p class="lead rv" style="--d:.5s">Repairs, installs and maintenance for homes and commercial rooftops, with a clear written estimate before any work begins.</p>
+    <div class="cta rv" style="--d:.6s"><a href="#contact" class="btn pri">Request a Free Estimate <span class="ar">→</span></a><a href="#services" class="btn">Explore Our Services</a></div>
+    <div class="tags rv" style="--d:.75s"><span>Clear communication</span><span>Careful planning</span><span>Thorough cleanup</span></div>
+  </div>
+  <div class="heroimg"><div class="imgbox rev" data-par="0.08"><img src="img/p16.jpg" alt="Cosmo's technician servicing a rooftop unit" style="object-position:center 30%"></div><div class="badge rv" style="--d:1s">Careful work. Clear plans. Clean finish.</div></div>
+</div></header>
+
+<section class="strip" aria-label="Recent work"><div class="track" id="track"></div></section>
+
+<section class="sec"><div class="wrap intro">
+  <div><span class="eyebrow rv">What we do</span><p class="big rv" style="margin-top:18px;--d:.1s">Repairs, replacements, rooftop units and seasonal tune-ups, planned around your property.</p></div>
+  <div class="checks">
+    <div class="check rv"><b>1</b><h3 style="font-size:22px;font-family:var(--body);font-weight:500;margin-bottom:6px">Safety-led planning</h3><p style="color:var(--mut);font-size:15px">Every job is scoped for access, power and weather first.</p></div>
+    <div class="check rv" style="--d:.1s"><b>2</b><h3 style="font-size:22px;font-family:var(--body);font-weight:500;margin-bottom:6px">Written estimates</h3><p style="color:var(--mut);font-size:15px">You approve the price before work starts.</p></div>
+    <div class="check rv" style="--d:.2s"><b>3</b><h3 style="font-size:22px;font-family:var(--body);font-weight:500;margin-bottom:6px">Respect for your space</h3><p style="color:var(--mut);font-size:15px">Floors, closets and landscaping stay protected.</p></div>
+    <div class="check rv" style="--d:.3s"><b>4</b><h3 style="font-size:22px;font-family:var(--body);font-weight:500;margin-bottom:6px">Cleanup included</h3><p style="color:var(--mut);font-size:15px">We leave the site tidy, as agreed in the quote.</p></div>
+  </div>
+</div></section>
+
+<section class="sec" id="about" style="padding-top:20px"><div class="wrap why">
+  <div class="imgbox rev" style="height:620px;position:relative"><img src="img/p17.jpg" alt="Attic air handler installation" data-par="0.06">
+    <div class="est"><header>Attic air handler · Replacement<em>Scope agreed</em></header><ul><li>Remove old coil and drain line</li><li>New condensate safety switch</li><li>Seal and insulate ducts</li><li>Final walkthrough with the crew lead</li></ul></div></div>
+  <div><span class="eyebrow rv">Why Cosmo's</span><h2 style="margin:16px 0 0"><span class="mask"><span>Good HVAC work is</span></span><span class="mask"><span style="--d:.1s">more than the repair.</span></span></h2>
+  <p class="rv" style="--d:.2s">We look at the whole system: the equipment, the ductwork, the roof or attic access and your goals, then explain the options before we touch anything.</p>
+  <a class="btn rv" style="--d:.3s" href="#contact">Meet Cosmo's <span class="ar">→</span></a></div>
+</div></section>
+
+<div class="stats rv" id="stats">
+  <div class="stat"><b data-n="6">0</b><span>Core services under one team</span></div>
+  <div class="stat"><b data-n="4">0</b><span>Local communities served</span></div>
+  <div class="stat"><b data-n="1">0</b><span>Written estimate before work starts</span></div>
+  <div class="stat"><b data-n="5">0</b><span>Steps from first call to cleanup</span></div>
+</div>
+
+<section class="sec" id="services"><div class="wrap">
+  <div class="head"><div><span class="eyebrow rv">Our Services</span><h2><span class="mask"><span>The right service for every</span></span><span class="mask"><span style="--d:.1s">heating and cooling challenge.</span></span></h2></div><a href="#contact" class="btn rv">View All Services <span class="ar">→</span></a></div>
+  <div class="svc">
+    <a href="air-conditioning.html" class="card rv"><div class="imgbox"><img src="img/p02.jpg" alt=""></div><div class="tx"><span class="num">01</span><h3 style="font-size:26px">AC Repair</h3><p>Fast diagnosis for condensers, fans, compressors and controls.</p><span class="more">Learn More <span>→</span></span></div></a>
+    <a href="#contact" class="card rv" style="--d:.1s"><div class="imgbox"><img src="img/p19.jpg" alt=""></div><div class="tx"><span class="num">02</span><h3 style="font-size:26px">Furnace &amp; Air Handler Install</h3><p>Right-sized equipment, clean attic work and tidy line sets.</p><span class="more">Learn More <span>→</span></span></div></a>
+    <a href="#contact" class="card rv" style="--d:.2s"><div class="imgbox"><img src="img/p04.jpg" alt=""></div><div class="tx"><span class="num">03</span><h3 style="font-size:26px">Rooftop Unit Replacement</h3><p>Crane lifts, curb work and commissioning for commercial roofs.</p><span class="more">Learn More <span>→</span></span></div></a>
+    <a href="#contact" class="card rv"><div class="imgbox"><img src="img/p05.jpg" alt=""></div><div class="tx"><span class="num">04</span><h3 style="font-size:26px">Maintenance &amp; Coil Cleaning</h3><p>Coil washes, filter changes and seasonal tune-ups.</p><span class="more">Learn More <span>→</span></span></div></a>
+    <a href="#contact" class="card rv" style="--d:.1s"><div class="imgbox"><img src="img/p07.jpg" alt=""></div><div class="tx"><span class="num">05</span><h3 style="font-size:26px">Mini-Split Systems</h3><p>Ductless cooling and heating for additions and tight spaces.</p><span class="more">Learn More <span>→</span></span></div></a>
+    <a href="#contact" class="card rv" style="--d:.2s"><div class="imgbox"><img src="img/p09.jpg" alt=""></div><div class="tx"><span class="num">06</span><h3 style="font-size:26px">Ductwork &amp; Commercial Build-outs</h3><p>Duct design, installation and tenant improvement work.</p><span class="more">Learn More <span>→</span></span></div></a>
+  </div>
+</div></section>
+
+<section class="sec" style="padding-top:20px"><div class="wrap safe">
+  <div><span class="eyebrow rv">Safety &amp; property protection</span><h2 style="margin-top:16px"><span class="mask"><span>Planned carefully.</span></span><span class="mask"><span style="--d:.1s">Carried out with care.</span></span></h2>
+  <div class="bul"><div class="rv">Pre-work scope review so there are no surprises</div><div class="rv" style="--d:.1s">Protection for roofs, closets, floors and landscaping</div><div class="rv" style="--d:.2s">Proper lifts, ladders and rigging for every access</div><div class="rv" style="--d:.3s">A final walkthrough before we leave</div></div>
+  <a href="#process" class="btn rv">See How Our Process Works <span class="ar">→</span></a></div>
+  <div class="imgbox rev"><img src="img/p12.jpg" alt="Scissor lift at a commercial building" data-par="0.06"></div>
+</div></section>
+
+<section class="proc" id="process"><div class="wrap">
+  <div class="head"><div><span class="eyebrow rv">Our Process</span><h2><span class="mask"><span>Four clear steps from first call</span></span><span class="mask"><span style="--d:.1s">to final cleanup.</span></span></h2></div><a href="#contact" class="btn lt rv">See the Full Process <span class="ar">→</span></a></div>
+  <div class="steps rv" id="steps">
+    <div class="step"><i>1</i><h3>Tell us what you need</h3><p>Call or send a request and we'll note the equipment and the problem.</p></div>
+    <div class="step"><i>2</i><h3>Arrange an assessment</h3><p>A technician visits, inspects the system and takes photos.</p></div>
+    <div class="step"><i>3</i><h3>Approve a clear estimate</h3><p>You get a written scope and price before any work starts.</p></div>
+    <div class="step"><i>4</i><h3>Work, cleanup &amp; walkthrough</h3><p>We finish the job, clean up and walk you through the result.</p></div>
+  </div>
+</div></section>
+
+<section class="sec" id="work"><div class="wrap">
+  <div class="head"><div><span class="eyebrow rv">Featured Projects</span><h2><span class="mask"><span>Real work.</span></span><span class="mask"><span style="--d:.1s">Thoughtful results.</span></span></h2></div><a href="#contact" class="btn rv">View All Projects <span class="ar">→</span></a></div>
+  <div class="proj">
+    <a href="#contact" class="rv"><div class="imgbox zoom"><img src="img/p06.jpg" alt=""></div><div class="meta"><span>Rooftop Replacement</span><span>Las Vegas, NV</span></div><h3>A New Unit Lifted Into Place</h3></a>
+    <a href="#contact" class="rv" style="--d:.1s"><div class="imgbox zoom"><img src="img/p15.jpg" alt=""></div><div class="meta"><span>Coil Replacement</span><span>Henderson, NV</span></div><h3>Old Coil Out, Clean Coil In</h3></a>
+    <a href="#contact" class="rv" style="--d:.2s"><div class="imgbox zoom"><img src="img/p20.jpg" alt=""></div><div class="meta"><span>Maintenance</span><span>St. George, UT</span></div><h3>A Full Rooftop Condenser Tune-Up</h3></a>
+  </div>
+</div></section>
+
+<section class="sec" id="reviews" style="padding-top:20px"><div class="wrap">
+  <div class="head"><div><span class="eyebrow rv">Customer Reviews</span><h2><span class="mask"><span>Good service is remembered</span></span><span class="mask"><span style="--d:.1s">after the crew leaves.</span></span></h2></div><a href="#contact" class="btn rv">Read Customer Reviews <span class="ar">→</span></a></div>
+  <div class="revs">
+    <div class="r rv"><div class="stars">★★★★★</div><p>"They explained everything, protected our closet and left the attic cleaner than they found it."</p><div class="who"><i>DC</i><div>Demo Customer<small>Furnace install</small></div></div></div>
+    <div class="r rv" style="--d:.1s"><div class="stars">★★★★★</div><p>"Our rooftop unit was swapped in a day with no downtime for the shop."</p><div class="who"><i>DC</i><div>Demo Customer<small>Rooftop replacement</small></div></div></div>
+    <div class="r rv" style="--d:.2s"><div class="stars">★★★★★</div><p>"Clear estimate, on-time crew, and the AC has been quiet and cold ever since."</p><div class="who"><i>DC</i><div>Demo Customer<small>AC repair</small></div></div></div>
+  </div>
+  <p class="note">Sample reviews for layout. Replace with real customer feedback before publishing.</p>
+</div></section>
+
+<section class="sec" style="padding-top:20px"><div class="wrap team">
+  <div class="imgbox rev"><img src="img/p03.jpg" alt="Cosmo's service trucks" data-par="0.06" style="object-position:center 60%"></div>
+  <div class="box"><div><span class="eyebrow" style="color:var(--sun)">Meet Our Team</span><h3 style="margin:16px 0 28px"><span class="mask"><span>Skilled people. Respectful work.</span></span></h3><a href="#contact" class="btn lt">Get to Know Our Team <span class="ar">→</span></a></div>
+  <div style="margin-top:44px"><h3 style="font-size:28px">Local service, close to home.</h3><div class="area"><span>Las Vegas</span><span>Henderson</span><span>North Las Vegas</span><span>Summerlin</span></div><a href="#contact" class="btn lt">Check Your Service Area <span class="ar">→</span></a></div></div>
+</div></section>
+
+<section class="sec" id="faq" style="padding-top:20px"><div class="wrap faq">
+  <div><span class="eyebrow rv">FAQ</span><h2 style="margin:16px 0 30px"><span class="mask"><span>Questions, answered</span></span><span class="mask"><span style="--d:.1s">before work begins.</span></span></h2><a href="#contact" class="btn rv">Visit All FAQs <span class="ar">→</span></a></div>
+  <div id="qs">
+    <div class="q rv open"><button>Do you offer free estimates?<i></i></button><div class="a"><div><p>Yes. We assess the system, take photos and send a written estimate before any work starts.</p></div></div></div>
+    <div class="q rv" style="--d:.05s"><button>Will you clean up after the job?<i></i></button><div class="a"><div><p>Cleanup is part of every job. We remove packaging, old parts and debris as agreed in the quote.</p></div></div></div>
+    <div class="q rv" style="--d:.1s"><button>Can you help if my AC stops working in summer?<i></i></button><div class="a"><div><p>We prioritise no-cooling calls. Call us and we will book the earliest available technician.</p></div></div></div>
+    <div class="q rv" style="--d:.15s"><button>Do I need a permit to replace my system?<i></i></button><div class="a"><div><p>Most replacements need one. We handle the permit and inspection for you.</p></div></div></div>
+  </div>
+</div></section>
+
+<section class="cta2" id="contact"><div class="bgimg" data-par="0.12"><img src="img/p13.jpg" alt="" style="object-position:center 40%"></div>
+  <div class="in2"><h2 class="rv">Let's make a plan for your comfort.</h2><div class="row rv" style="--d:.15s"><a href="#" class="btn lt">Request a Free Estimate <span class="ar">→</span></a><a href="tel:7029605555" class="btn lt">Call (702) 960-5555</a></div></div>
+</section>
+
+<footer><div class="wrap">
+  <div class="fg">
+    <div class="about"><a href="#top" class="logo" aria-label="Cosmo's Heating & Air Conditioning"><img src="img/logo.png" alt="Cosmo's Heating & Air Conditioning"></a><p>Man's most reliable heating &amp; air. Residential and commercial HVAC across the greater Las Vegas area.</p><p>(702) 960-5555<br>Mon–Sat, 7:00 AM–6:00 PM</p></div>
+    <div><h4>Services</h4><ul><li><a href="air-conditioning.html">Air Conditioning</a></li><li><a href="#services">Furnace Install</a></li><li><a href="#services">Rooftop Units</a></li><li><a href="#services">Maintenance</a></li><li><a href="#services">Mini-Splits</a></li></ul></div>
+    <div><h4>Company</h4><ul><li><a href="#about">About &amp; Team</a></li><li><a href="#process">Our Process</a></li><li><a href="#work">Our Work</a></li><li><a href="#reviews">Reviews</a></li></ul></div>
+    <div><h4>Support</h4><ul><li><a href="#contact">Get a Quote</a></li><li><a href="#faq">FAQ</a></li><li><a href="#">Privacy Policy</a></li><li><a href="#">Terms of Service</a></li></ul></div>
+  </div>
+  <div class="bigword">Cosmo's</div>
+  <div class="bar"><span>© 2026 Cosmo's Heating &amp; Air. All rights reserved.</span><span>Privacy Policy · Terms of Service</span></div>
+</div></footer>
+
+<script>
+const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
+// marquee strip: images twice for a seamless loop
+(()=>{const ids=[1,2,5,8,10,11,14,18,13,16].map(n=>String(n).padStart(2,'0')),t=$('#track');
+ t.innerHTML=[...ids,...ids].map(n=>`<div class="imgbox"><img src="img/p${n}.jpg" alt="" loading="lazy"></div>`).join('')})();
+// scroll reveal
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.14,rootMargin:'0px 0px -6% 0px'});
+$$('.rv,.mask').forEach(el=>io.observe(el));
+// clipped image boxes are watched through their parent (a clipped element reports zero area)
+const io2=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.querySelectorAll('.imgbox.rev').forEach(b=>b.classList.add('in'));io2.unobserve(e.target)}}),{threshold:.1});
+new Set($$('.imgbox.rev').map(el=>el.parentElement)).forEach(p=>io2.observe(p));
+// nav: hide on scroll down, show on up
+let ly=0;addEventListener('scroll',()=>{const y=scrollY;$('#nav').classList.toggle('solid',y>20);$('#nav').classList.toggle('hide',y>ly&&y>300);ly=y;parallax()},{passive:true});
+// parallax
+function parallax(){$$('[data-par]').forEach(el=>{const r=el.parentElement.getBoundingClientRect();if(r.bottom<0||r.top>innerHeight)return;const k=+el.dataset.par,off=(r.top+r.height/2-innerHeight/2)*k;el.style.translate='0 '+(-off)+'px'})}
+// count up
+const co=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;co.unobserve(e.target);$$('[data-n]',e.target).forEach(b=>{const n=+b.dataset.n,t0=performance.now();(function f(t){const p=Math.min((t-t0)/1400,1);b.textContent=String(Math.round(n*(1-Math.pow(1-p,3)))).padStart(2,'0');if(p<1)requestAnimationFrame(f)})(t0)})}),{threshold:.4});co.observe($('#stats'));
+// process line
+const so=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in')}),{threshold:.3});so.observe($('#steps'));
+// faq accordion
+$$('.q button').forEach(b=>b.onclick=()=>{const q=b.parentElement,o=q.classList.contains('open');$$('.q').forEach(x=>x.classList.remove('open'));if(!o)q.classList.add('open')});
+// mobile menu
+$('#burger').onclick=e=>{e.currentTarget.classList.toggle('on');$('#links').classList.toggle('open')};
+$$('#links a').forEach(a=>a.onclick=()=>{$('#burger').classList.remove('on');$('#links').classList.remove('open')});
+parallax();
+</script>
+</body>
+</html>
